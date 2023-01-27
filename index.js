@@ -1,14 +1,26 @@
-let x=5;
-let y=9;
 
-if (x>0){
-console.log('sosi');
-}
-else if(x<0){
-console.log('esegi');
-}
+console.log(fizzbuzz('x'))
 
 
-for(let i=0;i<5;i++){
-    console.log('hello tomi',i)
+function fizzbuzz(a){
+  if (typeof a === 'number'){
+     if (a%3===0 && a%5===0){
+        return 'fizzbuzz'
+     }
+     else if(a%5===0){
+        return 'buzz'
+     }
+     else if (a%3===0){
+        return 'fizz'
+     }
+     else{
+        return a
+
+     }
+
+
+  }
+  else{
+    return 'not a number'
+  }
 }
