@@ -1,26 +1,40 @@
+//object litrals
+const circle ={
+    radius:1,
+    draw: function(){
+        console.log('draw');
+    }
+};
 
-console.log(fizzbuzz('x'))
-
-
-function fizzbuzz(a){
-  if (typeof a === 'number'){
-     if (a%3===0 && a%5===0){
-        return 'fizzbuzz'
-     }
-     else if(a%5===0){
-        return 'buzz'
-     }
-     else if (a%3===0){
-        return 'fizz'
-     }
-     else{
-        return a
-
-     }
+const c1=circle.draw();
+console.log(c1)
 
 
-  }
-  else{
-    return 'not a number'
-  }
-}
+//factory functon
+function createCircle(radius){
+    return{
+        radius:radius,
+       draw: function(){
+        console.log('draw');
+    }
+    };
+} 
+
+const c2=createCircle(4)
+console.log(c2)
+
+
+
+//constructor functon
+
+function Circle(radius){
+  
+    this.radius=radius,
+    this.draw= function(){
+    console.log('draw');
+    }
+} 
+
+const c3=new Circle(88)
+console.log(c3)
+
