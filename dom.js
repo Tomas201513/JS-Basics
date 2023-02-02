@@ -30,4 +30,15 @@ console.log(div);
 
 // modifing the attribute
 
-h4.setAttribute('id','abc')
+h4.setAttribute('id','abc');
+
+// remove attribute
+// h4.removeAttribute('id')
+
+
+// remove element
+h4.remove();
+
+
+
+ 
