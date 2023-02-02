@@ -40,26 +40,26 @@
 
 //constructor functon
 
-function Circle(radius){
-    let x=1;
-    this.radius=radius,
+// function Circle(radius){
+//     let x=1;
+//     this.radius=radius,
     
-    this.draw= function(){
-    console.log('draw');
-    }
-    //getter & setters
-    Object.defineProperty(this,'dlocation',{
-        get:function(){
-            return x;
-        },
-        set: function(value)
-        {
-            x=value;
-        }
-    }); 
-} 
+//     this.draw= function(){
+//     console.log('draw');
+//     }
+//     //getter & setters
+//     Object.defineProperty(this,'dlocation',{
+//         get:function(){
+//             return x;
+//         },
+//         set: function(value)
+//         {
+//             x=value;
+//         }
+//     }); 
+// } 
 
-console.log(Circle.prototype)
+// console.log(Circle.prototype)
 
 // c3.dlocation=2;//setter
 // console.log(c3.dlocation)//getter
@@ -123,3 +123,17 @@ console.log(Circle.prototype)
 
 
 
+
+
+class Circle{
+    draw(){
+
+    }
+}
+
+const c= new Circle();
+
+// console.log(c)
+
+// const draw=c.draw;
+console.log(c.draw())
